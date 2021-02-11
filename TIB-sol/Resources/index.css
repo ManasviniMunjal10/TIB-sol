@@ -1,0 +1,319 @@
+﻿
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ----------------- Font Family -------------------------------*/
+
+@font-face {
+    font-family: Bold;
+    src: url('BCSans-Bold.woff');
+}
+
+@font-face {
+    font-family: BoldItalic;
+    src: url('BCSans-BoldItalic.woff');
+}
+
+@font-face {
+    font-family: Italic;
+    src: url('BCSans-Italic.woff');
+}
+
+@font-face {
+    font-family: Regular;
+    src: url('BCSans-Regular.woff');
+}
+
+
+
+
+
+
+/*---------------------StickyHeader------------------------------*/
+/*
+    .header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+}
+*/
+
+#hamitems .dropdown-menu * {
+    font-family: Regular;
+    color: grey;
+    font-size: 12px;
+}
+
+
+#hamitems .dropdown-menu {
+}
+
+
+
+
+/*
+    #hamitems .dropdown-content:hover  .dropdown-menu {
+  
+    display: flex;
+*/
+
+
+
+.header .user-nav {
+    padding: 15px 15px;
+    background: #0b126e;
+    color: #f1f1f1;
+}
+
+    .header .user-nav .header-links {
+        margin-bottom: 18px;
+    }
+
+        .header .user-nav .header-links .main-link {
+            font-family: Bold;
+        }
+
+    .header .user-nav a {
+        margin-left: 8px;
+        margin-right: 8px;
+        float: left;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+.header .bc-nav {
+    padding-top: 1.5em;
+    background: #ffffff;
+}
+
+    .header .bc-nav img {
+        padding-left: 2em;
+        width: 450px;
+        height: 80px;
+    }
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+    .sticky + .content {
+        padding-top: 102px;
+    }
+
+
+
+
+.hamnav .nav-link {
+    font-family: Bold;
+    color: #0b126e;
+}
+
+#hamitems a:hover {
+    background: #007781;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+    }
+}
+
+/*
+.mycontent-right {
+    border-left: 1px solid #0b126e;
+}
+
+.mycontent-middle {
+    border-left: 1px solid #0b126e;
+}
+    */
+
+/* [ON BIG SCREEN] */
+/* Wrapper */
+#hamnav {
+    width: 100%;
+    /* Optional */
+    position: sticky;
+    top: 0;
+}
+
+    /* Hide Hamburger */
+    #hamnav label, #hamburger {
+        display: none;
+    }
+
+/* Horizontal Menu Items #hamitems {
+    display: flex;
+} 
+*/
+
+#hamitems a {
+    /* width: 20%;*/ /* 100% / 5 tabs = 20% */
+    font-family: Bold;
+    color: #0b126e;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+    #hamitems a:hover {
+    }
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+    /* Show Hamburger Icon */
+    #hamnav label {
+        display: inline-block;
+        color: #0b126e;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    /* Break down menu items into vertical */
+    #hamitems a {
+        width: 10%;
+        box-sizing: border-box;
+        display: block;
+        /* width: 100%;*/
+        /* border-top: 1px solid #333;*/
+    }
+
+    /* Toggle Show/Hide Menu */
+    #hamitems {
+        display: none;
+    }
+
+    #hamnav input:checked ~ #hamitems {
+        display: block;
+    }
+}
+
+/* On Tablets*/
+
+@media screen and (max-width: 992px) {
+    /* Show Hamburger Icon */
+    #hamnav label {
+        display: inline-block;
+        color: #0b126e;
+        font-family: Bold;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+
+
+    /* Break down menu items into vertical */
+    #hamitems a {
+        width: 30em;
+        display: block;
+        /* box-sizing: border-box;
+        display: block;
+            width: 100%;*/
+        /* border-top: 1px solid #333;*/
+    }
+
+    /* Toggle Show/Hide Menu */
+    #hamitems {
+        display: none;
+    }
+
+    #hamnav input:checked ~ #hamitems {
+        display: block;
+    }
+}
+
+/* [DOES NOT MATTER] */
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+
+
+/*------------Footer----------------------*/
+
+.footer {
+    border-top: 1px solid grey
+}
+
+    .footer img {
+        margin width: 160px;
+        height: 90px;
+    }
+
+    /*  .footer .bc-nav a {
+        
+        margin-top:-80px;
+        margin-right:10px;
+        font-family: Bold;
+        color: #0b126e;
+        padding:4px;
+        
+    }
+      */
+    .footer .bc-nav {
+    }
+
+    .footer .footer-links {
+    }
+
+        .footer .footer-links a {
+            font-family: Bold;
+            color: #0b126e;
+            margin-left: 20px;
+        }
+
+    .footer .user-nav {
+        background: #0b126e;
+        color: white;
+    }
+
+
+
+@media screen and (max-width: 992px) {
+
+
+
+
+    /* Break down menu items into vertical */
+    .footer .footer-links a {
+        font-size: 14px;
+        padding: 5px 22px;
+        border-bottom: 1px solid white;
+        display: block;
+        background: #D3D3D3;
+        font-family: Regular;
+        /* box-sizing: border-box;
+        display: block;
+            width: 100%;*/
+        /* border-top: 1px solid #333;*/
+    }
+
+    .bc-nav a img {
+        text-align: center;
+    }
+
+    .footer img {
+    }
+    /* Toggle Show/Hide Menu */
+
+
+
+}
